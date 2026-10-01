@@ -39,7 +39,7 @@ const ContactSection = () => {
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
             <p className="font-mono text-sm text-muted-foreground">
-              {config.email.replace(/@/g, " (arroba) ")}
+              {config.email}
             </p>
             <div className="flex flex-wrap gap-3">
               <a href={`mailto:${config.email}`} className="cursor-can-hover">

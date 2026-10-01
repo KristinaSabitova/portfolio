@@ -285,7 +285,7 @@ export const EXPERIENCE: Experience[] = [
     period: "En curso",
     title: "Máster en Ciberseguridad e IA · enfoque Red Team",
     company: "Evolve Academy",
-    description: 
+    description: [
       "Formación práctica orientada a ciberseguridad ofensiva, análisis de vulnerabilidades y seguridad de sistemas y redes.",
       "Hacking ético y Offensive Security: reconocimiento, enumeración, explotación de vulnerabilidades, escalada de privilegios, pivoting y movimiento lateral.",
       "Web Security: análisis de aplicaciones web, identificación y explotación de vulnerabilidades y utilización de herramientas especializadas como Burp Suite.",

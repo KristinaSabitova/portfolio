@@ -1,0 +1,45 @@
+"use client";
+
+import { useInView } from "motion/react";
+import React, { useRef } from "react";
+import { Button } from "../ui/button";
+import { SiGithub } from "react-icons/si";
+import { Mail } from "lucide-react";
+import { config } from "@/data/config";
+import Link from "next/link";
+
+const BUTTONS = [
+  {
+    name: "GitHub",
+    href: config.social.github,
+    icon: <SiGithub size={"24"} color={"#fff"} />,
+  },
+  {
+    name: "Correo",
+    href: `mailto:${config.email}`,
+    icon: <Mail size={24} color={"#fff"} />,
+  },
+];
+
+const SocialMediaButtons = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const show = useInView(ref, { once: true });
+  return (
+    <div ref={ref} className="z-10">
+      {show &&
+        BUTTONS.map((button) => (
+          <Link
+            href={button.href}
+            key={button.name}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={button.name}
+          >
+            <Button variant={"ghost"}>{button.icon}</Button>
+          </Link>
+        ))}
+    </div>
+  );
+};
+
+export default SocialMediaButtons;

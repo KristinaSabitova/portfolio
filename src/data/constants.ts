@@ -1,0 +1,331 @@
+export enum SkillNames {
+  JS = "js",
+  TS = "ts",
+  HTML = "html",
+  CSS = "css",
+  REACT = "react",
+  VUE = "vue",
+  NEXTJS = "nextjs",
+  TAILWIND = "tailwind",
+  NODEJS = "nodejs",
+  EXPRESS = "express",
+  POSTGRES = "postgres",
+  MONGODB = "mongodb",
+  GIT = "git",
+  GITHUB = "github",
+  PRETTIER = "prettier",
+  NPM = "npm",
+  FIREBASE = "firebase",
+  WORDPRESS = "wordpress",
+  LINUX = "linux",
+  DOCKER = "docker",
+  NGINX = "nginx",
+  AWS = "aws",
+  GCP = "gcp",
+  VIM = "vim",
+  VERCEL = "vercel",
+}
+export type Skill = {
+  id: number;
+  name: string;
+  label: string;
+  shortDescription: string;
+  color: string;
+  icon: string;
+  /**
+   * Las teclas del teclado 3D están dentro del archivo de Spline y son fijas.
+   * Solo se muestran (teclado y rejilla alternativa) las marcadas como `enabled`;
+   * el resto se ocultan para no atribuirse tecnologías que no se usan.
+   */
+  enabled: boolean;
+};
+export const SKILLS: Record<SkillNames, Skill> = {
+  [SkillNames.JS]: {
+    id: 1,
+    name: "js",
+    label: "JavaScript",
+    shortDescription: "Interactividad en el navegador y base de mis interfaces web.",
+    color: "#f0db4f",
+    icon: "/assets/skill-icons/javascript.svg",
+    enabled: true,
+  },
+  [SkillNames.TS]: {
+    id: 2,
+    name: "ts",
+    label: "TypeScript",
+    shortDescription: "Tipado estático en el frontend de SPECTRA (React + Vite).",
+    color: "#007acc",
+    icon: "/assets/skill-icons/typescript.svg",
+    enabled: true,
+  },
+  [SkillNames.HTML]: {
+    id: 3,
+    name: "html",
+    label: "HTML",
+    shortDescription: "Estructura semántica y accesible de las páginas.",
+    color: "#e34c26",
+    icon: "/assets/skill-icons/html5.svg",
+    enabled: true,
+  },
+  [SkillNames.CSS]: {
+    id: 4,
+    name: "css",
+    label: "CSS",
+    shortDescription: "Maquetación, estilos y animaciones.",
+    color: "#563d7c",
+    icon: "/assets/skill-icons/css3.svg",
+    enabled: true,
+  },
+  [SkillNames.REACT]: {
+    id: 5,
+    name: "react",
+    label: "React",
+    shortDescription: "Interfaces con componentes, junto a Vite.",
+    color: "#61dafb",
+    icon: "/assets/skill-icons/react.svg",
+    enabled: true,
+  },
+  [SkillNames.VUE]: {
+    id: 6,
+    name: "vue",
+    label: "Vue",
+    shortDescription: "",
+    color: "#41b883",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.NEXTJS]: {
+    id: 7,
+    name: "nextjs",
+    label: "Next.js",
+    shortDescription: "",
+    color: "#fff",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.TAILWIND]: {
+    id: 8,
+    name: "tailwind",
+    label: "Tailwind",
+    shortDescription: "",
+    color: "#38bdf8",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.NODEJS]: {
+    id: 9,
+    name: "nodejs",
+    label: "Node.js",
+    shortDescription: "",
+    color: "#6cc24a",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.EXPRESS]: {
+    id: 10,
+    name: "express",
+    label: "Express",
+    shortDescription: "",
+    color: "#fff",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.POSTGRES]: {
+    id: 11,
+    name: "postgres",
+    label: "PostgreSQL",
+    shortDescription: "Base de datos de mis herramientas, con migraciones Alembic.",
+    color: "#336791",
+    icon: "/assets/skill-icons/postgresql.svg",
+    enabled: true,
+  },
+  [SkillNames.MONGODB]: {
+    id: 12,
+    name: "mongodb",
+    label: "MongoDB",
+    shortDescription: "",
+    color: "#336791",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.GIT]: {
+    id: 13,
+    name: "git",
+    label: "Git",
+    shortDescription: "Control de versiones de todo lo que construyo.",
+    color: "#f1502f",
+    icon: "/assets/skill-icons/git.svg",
+    enabled: true,
+  },
+  [SkillNames.GITHUB]: {
+    id: 14,
+    name: "github",
+    label: "GitHub",
+    shortDescription: "Donde vive mi código: github.com/KristinaSabitova.",
+    color: "#000000",
+    icon: "/assets/skill-icons/github.svg",
+    enabled: true,
+  },
+  [SkillNames.PRETTIER]: {
+    id: 15,
+    name: "prettier",
+    label: "Prettier",
+    shortDescription: "",
+    color: "#f7b93a",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.NPM]: {
+    id: 16,
+    name: "npm",
+    label: "NPM",
+    shortDescription: "",
+    color: "#fff",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.FIREBASE]: {
+    id: 17,
+    name: "firebase",
+    label: "Firebase",
+    shortDescription: "",
+    color: "#ffca28",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.WORDPRESS]: {
+    id: 18,
+    name: "wordpress",
+    label: "WordPress",
+    shortDescription: "",
+    color: "#007acc",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.LINUX]: {
+    id: 19,
+    name: "linux",
+    label: "Linux",
+    shortDescription: "Mi entorno de trabajo y el objetivo del hardening de mis servidores.",
+    color: "#fff",
+    icon: "/assets/skill-icons/linux.svg",
+    enabled: true,
+  },
+  [SkillNames.DOCKER]: {
+    id: 20,
+    name: "docker",
+    label: "Docker",
+    shortDescription: "Cada herramienta desplegada corre como stack Docker aislado.",
+    color: "#2496ed",
+    icon: "/assets/skill-icons/docker.svg",
+    enabled: true,
+  },
+  [SkillNames.NGINX]: {
+    id: 21,
+    name: "nginx",
+    label: "nginx",
+    shortDescription: "Reverse proxy y TLS para los servicios que despliego en mi VPS.",
+    color: "#008000",
+    icon: "/assets/skill-icons/nginx.svg",
+    enabled: true,
+  },
+  [SkillNames.AWS]: {
+    id: 22,
+    name: "aws",
+    label: "AWS",
+    shortDescription: "",
+    color: "#ff9900",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.GCP]: {
+    id: 25,
+    name: "gcp",
+    label: "Google Cloud",
+    shortDescription: "",
+    color: "#4285f4",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.VIM]: {
+    id: 23,
+    name: "vim",
+    label: "Vim",
+    shortDescription: "",
+    color: "#e34c26",
+    icon: "",
+    enabled: false,
+  },
+  [SkillNames.VERCEL]: {
+    id: 24,
+    name: "vercel",
+    label: "Vercel",
+    shortDescription: "",
+    color: "#6cc24a",
+    icon: "",
+    enabled: false,
+  },
+};
+
+export const ENABLED_SKILLS = Object.values(SKILLS).filter((s) => s.enabled);
+
+export type Experience = {
+  id: number;
+  /** texto libre: "En curso", "Experiencia previa"… */
+  period: string;
+  title: string;
+  company: string;
+  description: string[];
+  skills: SkillNames[];
+};
+
+export const EXPERIENCE: Experience[] = [
+  {
+    id: 1,
+    period: "En curso",
+    title: "Máster en Ciberseguridad e IA · enfoque Red Team",
+    company: "Evolve Academy",
+    description: [
+      "Formación en seguridad ofensiva, auditoría web/API y seguridad de sistemas de IA.",
+      "Construyo herramientas propias de auditoría y las despliego en mi propio servidor (Docker, nginx, hardening).",
+      "Practico con Hack The Box (acceso VIP) y los laboratorios de PortSwigger, con un writeup detallado por cada máquina.",
+    ],
+    skills: [
+      SkillNames.LINUX,
+      SkillNames.DOCKER,
+      SkillNames.NGINX,
+      SkillNames.POSTGRES,
+      SkillNames.GIT,
+      SkillNames.GITHUB,
+    ],
+  },
+  {
+    id: 2,
+    period: "En curso",
+    title: "Grado Superior en Desarrollo de Aplicaciones Web",
+    company: "DIGITECH FP",
+    description: [
+      "Desarrollo full-stack: interfaces web, bases de datos y aplicaciones completas.",
+      "La base para entender por dentro los sistemas que después audito.",
+    ],
+    skills: [
+      SkillNames.HTML,
+      SkillNames.CSS,
+      SkillNames.JS,
+      SkillNames.REACT,
+      SkillNames.POSTGRES,
+      SkillNames.GIT,
+    ],
+  },
+  {
+    id: 3,
+    period: "Experiencia previa",
+    title: "Imagen médica y planificación quirúrgica en 3D",
+    company: "Tecnología médica",
+    description: [
+      "Diagnóstico por imagen, medicina nuclear y planificación quirúrgica oncológica en 3D.",
+      "Trabajo de mucha precisión, de donde me viene la costumbre de fijarme en los detalles y comprobar bien las cosas.",
+    ],
+    skills: [],
+  },
+];

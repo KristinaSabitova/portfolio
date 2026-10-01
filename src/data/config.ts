@@ -20,7 +20,7 @@ const config = {
   author: "Kristina Solomatova Sabitova",
   // nombre con el que se presenta en la portada
   displayName: "Kristina Solomatova Sabitova",
-  email: "kris.yvna @ gmail,.com",
+  email: "kris.yvna"@"gmail,.com",
   site: process.env.NEXT_PUBLIC_SITE_URL || "https://kristinasabitova.github.io/portfolio",
 
   get ogImg() {

@@ -152,7 +152,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 13,
     name: "git",
     label: "Git",
-    shortDescription: "Control de versiones de todo lo que construyo.",
+    shortDescription: "Control de versiones de lo que construyo.",
     color: "#f1502f",
     icon: "/assets/skill-icons/git.svg",
     enabled: true,
@@ -285,10 +285,14 @@ export const EXPERIENCE: Experience[] = [
     period: "En curso",
     title: "Máster en Ciberseguridad e IA · enfoque Red Team",
     company: "Evolve Academy",
-    description: [
-      "Formación en seguridad ofensiva, auditoría web/API y seguridad de sistemas de IA.",
-      "Construyo herramientas propias de auditoría y las despliego en mi propio servidor (Docker, nginx, hardening).",
-      "Practico con Hack The Box (acceso VIP) y los laboratorios de PortSwigger, con un writeup detallado por cada máquina.",
+    description: 
+      "Formación práctica orientada a ciberseguridad ofensiva, análisis de vulnerabilidades y seguridad de sistemas y redes.",
+      "Hacking ético y Offensive Security: reconocimiento, enumeración, explotación de vulnerabilidades, escalada de privilegios, pivoting y movimiento lateral.",
+      "Web Security: análisis de aplicaciones web, identificación y explotación de vulnerabilidades y utilización de herramientas especializadas como Burp Suite.",
+      "Sistemas y redes: análisis de servicios, configuración y explotación de entornos de laboratorio y trabajo con máquinas virtualizadas.",
+      "Laboratorios prácticos: resolución de escenarios de ciberseguridad y documentación de evidencias técnicas.",
+      "Ciberseguridad e IA: aplicación de herramientas de IA como apoyo al análisis, automatización y aprendizaje técnico.",
+      "Entornos y herramientas: Kali Linux · Burp Suite · Virtualización · Linux · Git/GitHub · Metodologías de pentesting.",
     ],
     skills: [
       SkillNames.LINUX,
@@ -305,8 +309,11 @@ export const EXPERIENCE: Experience[] = [
     title: "Grado Superior en Desarrollo de Aplicaciones Web",
     company: "DIGITECH FP",
     description: [
-      "Desarrollo full-stack: interfaces web, bases de datos y aplicaciones completas.",
-      "La base para entender por dentro los sistemas que después audito.",
+      "Formación Profesional de Grado Superior orientada al desarrollo de aplicaciones web y adquisición de una base sólida en programación, desarrollo frontend/backend y bases de datos.",
+      "Programación: Java y fundamentos de programación orientada a objetos.",
+      "Desarrollo web: HTML, CSS y JavaScript, incluyendo manipulación del DOM y desarrollo de interfaces web.",
+      "Bases de datos: diseño y gestión de bases de datos relacionales mediante MySQL y PostgreSQL, consultas SQL y modelado de datos.",
+      "Desarrollo y control de proyectos: Git/GitHub, estructura de aplicaciones y trabajo práctico mediante proyectos.",
     ],
     skills: [
       SkillNames.HTML,
@@ -324,7 +331,9 @@ export const EXPERIENCE: Experience[] = [
     company: "Tecnología médica",
     description: [
       "Diagnóstico por imagen, medicina nuclear y planificación quirúrgica oncológica en 3D.",
-      "Trabajo de mucha precisión, de donde me viene la costumbre de fijarme en los detalles y comprobar bien las cosas.",
+      "Uso de imágenes CT y MRI para la creación de modelos anatómicos tridimensionales personalizados. ",
+      "Segmentación y reconstrucción 3D de estructuras anatómicas, tumores y patologías utilizando herramientas especializadas como 3D Slicer.",
+      "Colaboración en un entorno multidisciplinar y orientación al detalle en proyectos donde la precisión y la calidad de la información eran críticas. Esta experiencia reforzó competencias que actualmente aplico al ámbito de la ciberseguridad: análisis, pensamiento estructurado, atención al detalle, resolución de problemas y trabajo con información técnica compleja.",
     ],
     skills: [],
   },

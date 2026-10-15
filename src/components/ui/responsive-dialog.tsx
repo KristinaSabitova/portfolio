@@ -22,7 +22,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface ResponsiveDialogProps {
   children: React.ReactNode;
@@ -88,7 +87,14 @@ function ResponsiveDialogContent({
 
   return (
     <DrawerContent className={className}>
-      <ScrollArea className="max-h-[85vh] px-4 pb-4 overflow-y-auto!" data-lenis-prevent>{children}</ScrollArea>
+      {/* Div nativo con scroll: el ScrollArea de Radix recorta el contenido con
+          max-height (su viewport usa h-full) y en móvil no dejaba desplazarse. */}
+      <div
+        className="max-h-[85dvh] overflow-y-auto overscroll-contain px-4 pb-4 [-webkit-overflow-scrolling:touch]"
+        data-lenis-prevent
+      >
+        {children}
+      </div>
     </DrawerContent>
   );
 }

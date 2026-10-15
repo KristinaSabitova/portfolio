@@ -4,7 +4,7 @@ export const STATES = {
   hero: {
     desktop: {
       scale: { x: 0.20, y: 0.20, z: 0.20 },
-      position: { x: 225, y: -100, z: 0 },
+      position: { x: 400, y: -100, z: 0 },
       rotation: { x: 0, y: 0, z: 0 },
     },
     mobile: {
@@ -144,8 +144,20 @@ export const getKeyboardState = ({
 
   const scaleOffset = getScaleOffset();
 
+  // En el hero de escritorio el teclado va a la derecha del nombre: cuanto más
+  // estrecha la pantalla, menos margen hay, así que se acerca al centro para no
+  // salirse por el borde al girar (340 a 1024 px → 450 a partir de ~1780 px).
+  const position =
+    section === "hero" && !isMobile
+      ? {
+        ...baseTransform.position,
+        x: Math.min(Math.max(340 + (window.innerWidth - 1024) * 0.15, 340), 450),
+      }
+      : baseTransform.position;
+
   return {
     ...baseTransform,
+    position,
     scale: {
       x: Math.abs(baseTransform.scale.x * scaleOffset),
       y: Math.abs(baseTransform.scale.y * scaleOffset),

@@ -50,6 +50,7 @@ const Index: React.FC<IndexProps> = ({ setIsActive }) => {
         />
       </div>
       {/* Subtle reduced-motion control, tucked into the bottom-right of the menu.
+          Below 1000px it flows under the links so it doesn't cover the last one.
           Stop propagation so toggling motion doesn't also close the menu. */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -57,7 +58,7 @@ const Index: React.FC<IndexProps> = ({ setIsActive }) => {
         exit={{ opacity: 0 }}
         transition={{ delay: 0.5, duration: 0.4 }}
         onClick={(e) => e.stopPropagation()}
-        className="absolute bottom-0 right-0"
+        className="flex justify-end pr-6 pb-4 min-[1000px]:absolute min-[1000px]:bottom-0 min-[1000px]:right-0 min-[1000px]:p-0"
       >
         <MotionToggle />
       </motion.div>

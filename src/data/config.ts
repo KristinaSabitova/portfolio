@@ -1,15 +1,17 @@
 const config = {
-  title: "Kristina Solomatova Sabitova | Seguridad ofensiva · Red Team",
+  title: "Kristina Solomatova Sabitova | Analista junior de ciberseguridad",
   description: {
-    long: "Portfolio de Kristina Solomatova Sabitova: seguridad ofensiva y Red Team. Herramientas propias de auditoría de código, análisis de pipelines LLM y reconocimiento pasivo, con práctica continua en Hack The Box y PortSwigger.",
+    long: "Portfolio de Kristina Solomatova Sabitova, analista junior de ciberseguridad: OSINT, seguridad web y Python. Herramientas propias de reconocimiento pasivo, seguridad de IA y auditoría de código, con práctica continua en Hack The Box y PortSwigger.",
     short:
-      "Portfolio de Kris: seguridad ofensiva, Red Team y herramientas propias de auditoría.",
+      "Portfolio de Kris: analista junior de ciberseguridad · OSINT, seguridad web y Python.",
   },
   keywords: [
     "Kristina Solomatova Sabitova",
     "Kris",
+    "analista de ciberseguridad",
+    "OSINT",
+    "seguridad web",
     "seguridad ofensiva",
-    "red team",
     "pentesting",
     "ciberseguridad",
     "auditoría de código",
@@ -36,6 +38,7 @@ const config = {
   },
   social: {
     github: "https://github.com/KristinaSabitova",
+    linkedin: "https://www.linkedin.com/in/kristina-solomatova-sabitova-8207a4163/",
   },
 };
 export { config };

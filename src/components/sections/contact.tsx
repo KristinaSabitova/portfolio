@@ -13,6 +13,7 @@ import { SectionHeader } from "./section-header";
 import SectionWrapper from "../ui/section-wrapper";
 import { Mail } from "lucide-react";
 import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 
 const ContactSection = () => {
   return (
@@ -31,10 +32,9 @@ const ContactSection = () => {
           <CardHeader>
             <CardTitle className="text-4xl">Escríbeme</CardTitle>
             <CardDescription className="text-base leading-relaxed">
-              Busco mi primera oportunidad profesional en ciberseguridad,
-              especialmente en posiciones Junior SOC / Cybersecurity, con la
-              mirada puesta en evolucionar hacia Red Team. Escríbeme por donde
-              te vaya mejor.
+              Abierta a posiciones de analista junior de ciberseguridad:
+              OSINT, seguridad web, operaciones de seguridad e inteligencia de
+              amenazas. Escríbeme por donde te vaya mejor.
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
@@ -57,6 +57,17 @@ const ContactSection = () => {
                 <Button variant="outline" className="gap-2">
                   <SiGithub size={18} />
                   GitHub
+                </Button>
+              </a>
+              <a
+                href={config.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-can-hover"
+              >
+                <Button variant="outline" className="gap-2">
+                  <FaLinkedin size={18} />
+                  LinkedIn
                 </Button>
               </a>
             </div>

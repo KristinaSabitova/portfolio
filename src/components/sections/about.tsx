@@ -6,23 +6,31 @@ import { SectionHeader } from "./section-header";
 import SectionWrapper from "../ui/section-wrapper";
 
 const INTERESTS = [
-  "Offensive Security",
-  "Web Security",
-  "Pentesting",
-  "SOC",
-  "Vulnerability Assessment",
-  "Ethical Hacking",
+  "OSINT",
+  "Exposición externa",
+  "Seguridad web",
+  "Seguridad ofensiva",
+  "Operaciones de seguridad",
+  "Inteligencia de amenazas",
+  "Seguridad de IA",
 ];
 const TECH = [
-  "Linux",
-  "Kali Linux",
   "Burp Suite",
-  "Virtualización",
-  "Git/GitHub",
+  "Nmap",
+  "Shodan",
+  "Metasploit",
+  "Wireshark",
+  "SQLmap",
+  "Kali Linux",
+  "Python",
+  "FastAPI",
   "Java",
   "JavaScript",
-  "SQL",
-  "HTML/CSS",
+  "React",
+  "Docker",
+  "nginx",
+  "SQL · MySQL · PostgreSQL",
+  "Git/GitHub",
 ];
 
 const Group = ({ title, items }: { title: string; items: string[] }) => (
@@ -63,35 +71,28 @@ const AboutSection = () => {
               entender cómo funcionan las cosas fue el punto de partida.
             </p>
             <p>
-              Actualmente estoy construyendo mi carrera profesional en
-              ciberseguridad, desarrollando una base sólida en sistemas, redes,
-              desarrollo web y análisis de vulnerabilidades. Estoy cursando el
-              Máster en Ciberseguridad e IA, con formación práctica en hacking
-              ético, análisis de redes, explotación de vulnerabilidades,
-              técnicas de pivoting y movimiento lateral, escalada de
-              privilegios, seguridad web y elaboración de evidencias e informes
-              técnicos.
+              Vengo de otro sector profesional y he reorientado mi carrera
+              hacia la ciberseguridad. Me he formado en seguridad ofensiva y
+              desarrollo web, y desde mayo de 2026 colaboro como freelance en
+              proyectos de análisis de exposición externa,
+              evaluaciones de seguridad sobre activos autorizados e informes
+              para clientes.
             </p>
             <p>
-              Paralelamente, estoy cursando Desarrollo de Aplicaciones Web
-              (DAW), reforzando mi perfil técnico mediante programación,
-              desarrollo web, bases de datos y tecnologías como Java,
-              JavaScript, HTML, CSS, MySQL y PostgreSQL. Mi aprendizaje no se
-              queda únicamente en la teoría: trabajo con laboratorios
-              prácticos, entornos virtualizados y plataformas de entrenamiento
-              en ciberseguridad, poniendo en práctica metodologías de
-              reconocimiento, explotación y análisis de vulnerabilidades.
+              Desarrollo herramientas propias en Python y FastAPI para OSINT,
+              seguridad de IA y auditoría de código, y practico de forma
+              continua en Hack The Box, PortSwigger Web Security Academy y
+              TryHackMe. Me interesan especialmente las operaciones de
+              seguridad y la inteligencia de amenazas.
             </p>
             <div className="grid gap-6 md:grid-cols-2 pt-2">
               <Group title="Áreas de interés" items={INTERESTS} />
               <Group title="Tecnologías y entornos" items={TECH} />
             </div>
             <p>
-              Actualmente busco mi primera oportunidad profesional en
-              ciberseguridad, especialmente en posiciones Junior SOC /
-              Cybersecurity, donde pueda aportar desde el primer día, seguir
-              desarrollando fundamentos sólidos y evolucionar progresivamente
-              hacia Red Team.
+              Asisto con regularidad a conferencias de seguridad como BitUP
+              (Alicante) y Osintomático (Madrid). Idiomas: español y ruso
+              nativos, inglés B1.
             </p>
           </CardContent>
         </Card>

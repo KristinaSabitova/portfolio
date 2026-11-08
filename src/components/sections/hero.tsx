@@ -7,6 +7,7 @@ import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
 import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 import { config } from "@/data/config";
 
 import SectionWrapper from "../ui/section-wrapper";
@@ -63,7 +64,9 @@ const HeroSection = () => {
                       "cursor-default sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    Seguridad ofensiva · Red Team
+                    Analista junior de ciberseguridad
+                    <br />
+                    <span className="text-base sm:text-lg">OSINT · Seguridad web · Python</span>
                   </p>
                 </BlurIn>
               </div>
@@ -95,6 +98,17 @@ const HeroSection = () => {
                       <Button variant={"outline"} className="gap-2">
                         <SiGithub size={22} />
                         GitHub
+                      </Button>
+                    </Link>
+                    <Link
+                      href={config.social.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn de Kris"
+                      className="cursor-can-hover"
+                    >
+                      <Button variant={"outline"}>
+                        <FaLinkedin size={22} />
                       </Button>
                     </Link>
                     <Link

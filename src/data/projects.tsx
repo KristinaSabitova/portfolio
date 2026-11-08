@@ -281,8 +281,8 @@ const projects: Project[] = [
   },
   {
     id: "domini",
-    category: "Reconocimiento pasivo · OSINT",
-    title: "DOMINI · SENTINEL",
+    category: "Suite DOMINI · OSINT",
+    title: "DOMINUS · SENTINEL",
     src: SHOTS.domini[0] ?? `${BASE_PATH}/domini/cover.png`,
     screenshots: SHOTS.domini,
     skills: {
